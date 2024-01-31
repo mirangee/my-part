@@ -4,22 +4,19 @@
 
 /* 배경 설정 */
 section.process {
-  display: flex;
-}
-section.process .back-img img {
-  width: 100vw;
-  position: absolute;
-  
+  height: 110vh;
+  overflow: hidden;
 }
 
 section.process .contents {
-  width: 70%;
-  margin: 0 auto;
-  z-index: 999;
-  /* background-color: blue; */
+  background: url(./our-design-process-background.jpg) no-repeat center;
+  background-size: 108%;
+  background-position: 60% 0%;
+  position: relative;
 }
 
 section.process .contents .title {
+  padding-top: 60px;
   color: #fff;
   font-size: 48px;
   font-weight: 400;
@@ -42,12 +39,12 @@ section.process .contents .description p {
 }
 
 section.process .contents .description .list {
-  width: 28%;
+  width: 25%;
   color: #fff;  
   font-size: 18px;
   font-weight: 700;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 30px auto 0;
 }
 
@@ -60,3 +57,76 @@ section.process .contents .description .list li {
   margin: 10px 0;
 }
 
+
+/* .sequence style (하단부 다이어그램) */
+section.process .contents {
+  position: relative;
+}
+
+.cls-1 {
+  fill: #1d1d1b;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 24.3px;
+  transform: scale(0.55);
+  fill-opacity: 0;
+}
+
+.first:hover {
+  fill-opacity: 0.3;
+}
+
+.second:hover {
+  fill-opacity: 0.3;
+}
+
+.third:hover {
+  fill-opacity: 0.3;
+}
+
+section.process .contents .diagram ul {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-52%, -50%);
+  width: 55%;
+  display: flex;
+  background-color: blue;
+}
+
+
+
+section.process .contents .diagram p {
+  color: #fff;
+  font-size: 32px;
+  
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+section.process .contents .diagram ul.outer li {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+section.process .contents .diagram ul.outer li:nth-child(1) {
+  position: absolute;
+  top: 80%;
+  left: 29%;
+}
+
+section.process .contents .diagram ul.outer li:nth-child(2) {
+  position: absolute;
+  bottom: -20%;
+  left: 61%;
+}
+
+section.process .contents .diagram ul.outer li:nth-child(3) {
+  position: absolute;
+  bottom: -20%;
+  left: 90%;
+}
