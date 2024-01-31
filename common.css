@@ -1,0 +1,29 @@
+/* reset css */
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
+/* 텍스트 공통 폰트: 'Gibson' */
+@import url(https://db.onlinewebfonts.com/c/41a37b5ce5c3e0b6200b09e4f6e8b5e5?family=Gibson);
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gibson", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-weight: 600;
+  color: #f7941d;;
+}
+
+p {
+  color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

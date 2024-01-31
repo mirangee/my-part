@@ -1,0 +1,62 @@
+@import url(common.css);
+
+/* section.process style */
+
+/* 배경 설정 */
+section.process {
+  display: flex;
+}
+section.process .back-img img {
+  width: 100vw;
+  position: absolute;
+  
+}
+
+section.process .contents {
+  width: 70%;
+  margin: 0 auto;
+  z-index: 999;
+  /* background-color: blue; */
+}
+
+section.process .contents .title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+}
+
+section.process .contents .title::after {
+  content: '';
+  border-bottom: 2px solid #fff;
+  display: block;
+  margin: 1.5625rem auto 2.125rem;
+  width: 2.6875rem;
+}
+
+section.process .contents .description p {
+  font-size: 24px;
+  font-weight: 700;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+section.process .contents .description .list {
+  width: 28%;
+  color: #fff;  
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 0;
+}
+
+section.process .contents .description .list ul {
+  border-left: 2px solid #f7941d;
+  padding: 0 15px;
+}
+
+section.process .contents .description .list li {
+  margin: 10px 0;
+}
+
