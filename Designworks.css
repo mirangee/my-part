@@ -1,15 +1,13 @@
 @import url(common.css);
 
 /* section.process style */
-
-/* 배경 설정 */
 section.process {
   height: 110vh;
   overflow: hidden;
 }
 
 section.process .contents {
-  background: url(./our-design-process-background.jpg) no-repeat center;
+  background: url(./img/our-design-process-background.jpg) no-repeat center;
   background-size: 108%;
   background-position: 60% 0%;
   position: relative;
@@ -23,12 +21,13 @@ section.process .contents .title {
   text-align: center;
 }
 
+/* 중앙 흰색 선 */
 section.process .contents .title::after {
   content: '';
   border-bottom: 2px solid #fff;
   display: block;
-  margin: 1.5625rem auto 2.125rem;
-  width: 2.6875rem;
+  margin: 1.56rem auto 2.1rem;
+  width: 2.7rem;
 }
 
 section.process .contents .description p {
@@ -110,3 +109,137 @@ section.process .contents .diagram p {
   transform: translate(-50%, -50%); 
 }
 
+/* section.equries style */
+section.enquries {
+  height: 90vh;
+  background-image: url(./img/city.jpg);
+}
+
+section.enquries .inner {
+  width: 50%;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.enquries .inner article {
+  width: 49%;
+  color: #fff;
+  background-color: black;
+}
+
+section.enquries .inner article h2 {
+  font-size: 24px;
+}
+
+section.enquries .inner article .left-top > h2::after {
+  content: '';
+  border-bottom: 2px solid #f7941d;
+  display: block;
+  margin: 1.56rem auto 2.1rem 0;
+  width: 2.7rem;
+}
+
+section.enquries .inner article .left-top > ul {
+  display: flex;
+  
+  justify-content: start;
+  border-bottom: 1px solid #f7941d;
+}
+
+section.enquries .inner article .left-top > ul > li {
+  font-weight: bold;
+  line-height: 2;
+  flex-grow: 1;
+  padding-left: 15px;
+}
+
+section.enquries .inner article .left-top > ul > li:first-child {
+  background-color: #f7941d;
+}
+
+section.enquries .inner article p {
+  font-size: 18px;
+}
+
+section.enquries .inner article .address h2 {
+  margin-top: 20px;
+}
+
+section.enquries .inner article .address p {
+  margin-top: 17px;
+}
+
+section.enquries .inner article .left-down h2 {
+  margin-top: 100px ;
+}
+
+section.enquries .inner article .left-down p:nth-child(2) {
+  margin-top: 17px;
+  color: #f7941d;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+
+
+/* footer style */
+footer {
+  background-color: black;
+  position: relative;
+}
+
+footer .inner {
+  color: #fff;
+  width: 50%;
+  height: 125px;
+  margin: 0 auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .inner h2 {
+  width: 30%;
+}
+
+footer .inner h2 img {
+  width: 150px;
+}
+
+footer .inner p {
+  width: 30%;
+  font-size: 12px;
+  flex-grow: 2;
+  text-align: center;
+}
+
+footer .inner ul {
+  font-size: 16px;
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+
+footer .inner ul li:first-child {
+  font-weight: bold;
+}
+
+footer .inner ul li {
+  margin-right: 10px;
+}
+
+footer .inner ul li:last-child {
+  margin-right: 5px;
+}
+
+footer > p {
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 25%;
+}
