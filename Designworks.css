@@ -68,7 +68,7 @@ section.process .contents {
   stroke: #fff;
   stroke-miterlimit: 10;
   stroke-width: 24.3px;
-  transform: scale(0.55);
+  transform: scale(0.53);
   fill-opacity: 0;
 }
 
@@ -84,16 +84,20 @@ section.process .contents {
   fill-opacity: 0.3;
 }
 
-section.process .contents .diagram ul {
-  position: absolute;
-  top: 44%;
-  left: 50%;
-  transform: translate(-52%, -50%);
-  width: 55%;
-  display: flex;
-  background-color: blue;
+.first-circle, .second-circle {
+  fill: rgb(17, 151, 168);
+  fill-opacity: 0.5;
 }
 
+.third-circle {
+  fill: rgb(135, 255, 110);
+  fill-opacity: 0.3;
+}
+
+.line {
+  position: absolute;
+  z-index: 9999;
+}
 
 
 section.process .contents .diagram p {
@@ -106,27 +110,3 @@ section.process .contents .diagram p {
   transform: translate(-50%, -50%); 
 }
 
-section.process .contents .diagram ul.outer li {
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  
-}
-
-section.process .contents .diagram ul.outer li:nth-child(1) {
-  position: absolute;
-  top: 80%;
-  left: 29%;
-}
-
-section.process .contents .diagram ul.outer li:nth-child(2) {
-  position: absolute;
-  bottom: -20%;
-  left: 61%;
-}
-
-section.process .contents .diagram ul.outer li:nth-child(3) {
-  position: absolute;
-  bottom: -20%;
-  left: 90%;
-}
