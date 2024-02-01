@@ -72,15 +72,15 @@ section.process .contents {
   fill-opacity: 0;
 }
 
-.first:hover {
+.first:hover > .cls-1 {
   fill-opacity: 0.3;
 }
 
-.second:hover {
+.second:hover > .cls-1 {
   fill-opacity: 0.3;
 }
 
-.third:hover {
+.third:hover > .cls-1 {
   fill-opacity: 0.3;
 }
 
