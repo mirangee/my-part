@@ -85,13 +85,13 @@ section.process .contents {
 }
 
 .first-circle, .second-circle {
-  fill: rgb(17, 151, 168);
-  fill-opacity: 0.5;
+  fill: rgb(31, 185, 206);
+  fill-opacity: 0.6;
 }
 
 .third-circle {
   fill: rgb(135, 255, 110);
-  fill-opacity: 0.3;
+  fill-opacity: 0.4;
 }
 
 .line {
