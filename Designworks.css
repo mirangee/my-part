@@ -2,8 +2,7 @@
 
 /* section.process style */
 section.process {
-  height: 110vh;
-  overflow: hidden;
+  height: 1050px;
 }
 
 section.process .contents {
@@ -115,12 +114,13 @@ section.process .contents .diagram p span.lnr:hover {
 }
 
 /* section.equries style */
-/* left part */
+
 section.enquries {
   height: 90vh;
   background-image: url(./img/city-dark.jpg);
 }
 
+/* left part */
 section.enquries .inner {
   width: 50%;
   height: inherit;
@@ -133,7 +133,6 @@ section.enquries .inner {
 section.enquries .inner article {
   width: 48%;
   color: #fff;
-  /* background-color: blue; */
 }
 
 section.enquries .inner h2 {
@@ -216,7 +215,8 @@ section.enquries .inner article .right form input {
   border: 2px solid #fff;
   border-radius: 0;
   padding-left: 15px;
-} 
+  outline: none;
+}
 
 section.enquries .inner article .right form input:hover,
 section.enquries .inner article .right form input:focus,
@@ -310,4 +310,15 @@ footer>p {
   position: absolute;
   top: 15px;
   right: 25%;
+}
+
+/* ================ 반응형 웹 디자인 ================ */
+/* 태블릿 1024px 이하 해상도(아이패드 프로) */
+@media (max-width: 1024px) {
+
+}
+
+/* 태블릿 768px 이하 해상도 (아이패드 미니) */
+@media (max-width:768px) {
+
 }
