@@ -113,6 +113,47 @@ section.process .contents .diagram p span.lnr:hover {
   color: #f7941d;
 }
 
+/* section.marketing style */
+section.marketing .pic img {
+  width: 100%;
+}
+
+section.marketing .txt-contents {
+  width: 990px;
+  margin: 80px auto 85px;
+  display: flex;
+  
+}
+
+section.marketing .txt-contents h2{
+  font-size: 30px;
+  margin-bottom:24px;
+} 
+
+section.marketing .txt-contents .left-one {
+  width: 470px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+section.marketing .txt-contents .right-one {
+  width: 470px;
+  margin-left: 20px;
+}
+
+section.marketing .txt-contents .right-one h2 {
+  color: #f7941d;
+}
+
+section.marketing .txt-contents p {
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  
+}
+
+
+
 /* section.equries style */
 
 section.enquries {
