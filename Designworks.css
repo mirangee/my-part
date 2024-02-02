@@ -190,7 +190,11 @@ section.enquries .inner article .left-down p:nth-child(2) {
   margin-top: 17px;
   color: #f7941d;
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 900;
+}
+
+section.enquries .inner article .left-down p:nth-child(2):hover {
+  color: #be6c07;
 }
 
 /* right part */

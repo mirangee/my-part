@@ -19,7 +19,7 @@
   <section class="process">
     <div class="contents">
       <h2 class="title">OUR DESIGN PROCESS</h2>
-      <div class="description first">
+      <div class="description first-one" id="first-description">
         <p>
           Understand where your customers experience frustrations,
           pin-pointing their functional and emotional needs to
@@ -39,7 +39,7 @@
         </div>
       </div>
 
-      <!-- <div class="description second">
+      <div class="description second-one" id="second-description" style="display: none;">
         <p>
           Creatively designing ways to challenge and solve the right problems
           to make unique products that truly
@@ -59,7 +59,7 @@
         </div>
       </div>
 
-      <div class="description third">
+      <div class="description third-one" id="third-description" style="display: none;">
         <p>
           Engineering products that set you apart from the competition.
           Manufactured solutions that provide value for your customer.
@@ -76,33 +76,45 @@
             <li>User trials</li>
           </ul>
         </div>
-      </div> -->
+      </div>
 
 
       <div class="diagram">
         <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="-339 70 1920 1080">
-          <g class="first">
+          <g class="first" onmouseover="show('one')">
             <path class="cls-1"
-            d="m445.2,252.4c-60,84.2-146.9,206.5-180.3,247.7-28.8,41.3,4.7,84.1,4.7,84.1,0,0,144.3,208.4,190,265.2,69.2,86,141.5-1.7,141.5-1.7l218.5-305.4s-52.3-71.7-208.1-289.2c0,0-76.2-129.7-166.4-.8Z" />
-            <text class="txt" x="203" y="295" font-family="Gibson" font-size="35" font-weight="700" fill="#fff">Immersion</text>
-          </g>
-          
-          <g class="second">
-            <path class="cls-1"
-              d="m1027.7,249.9c-60,84.2-208.1,292.4-208.1,292.4,0,0,176.7,247.8,222.5,304.6,69.2,86,141.5-1.7,141.5-1.7l218.5-305.4s-52.3-71.7-208.1-289.2c0,0-76.2-129.7-166.4-.8Z" />
-            <text class="txt" x="530" y="295" font-family="Gibson" font-size="35" font-weight="700" fill="#fff">Ideation</text>
-          </g>
-          
-          <g class="third">
-            <path class="cls-1"
-              d="m1957,497.6c-33.4-41.3-120.3-163.5-180.3-247.7-90.2-128.9-166.4.8-166.4.8-155.8,217.5-208.1,289.2-208.1,289.2l218.5,305.4s72.3,87.7,141.5,1.7c45.7-56.8,190-265.2,190-265.2,0,0,33.5-42.9,4.7-84.1Z" />
-            <text class="txt" x="840" y="295" font-family="Gibson" font-size="35" font-weight="700" fill="#fff">Delivery</text>
+              d="m445.2,252.4c-60,84.2-146.9,206.5-180.3,247.7-28.8,41.3,4.7,84.1,4.7,84.1,0,0,144.3,208.4,190,265.2,69.2,86,141.5-1.7,141.5-1.7l218.5-305.4s-52.3-71.7-208.1-289.2c0,0-76.2-129.7-166.4-.8Z" />
+            <text class="txt" x="203" y="295" font-family="Gibson" font-size="35" font-weight="700"
+              fill="#fff">Immersion</text>
           </g>
 
-          <text font-family="Gibson" font-size="20" font-weight="400" fill="#fff"><tspan x="385", y="550">Innovation</tspan><tspan x="370", y="580">Opportunities</tspan></text>
-          <text font-family="Gibson" font-size="20" font-weight="400" fill="#fff"><tspan x="710", y="550">Problem</tspan><tspan x="705", y="580">Definition</tspan></text>
-          <text font-family="Gibson" font-size="20" font-weight="400" fill="#fff"><tspan x="990", y="550">Commercial</tspan><tspan x="1000", y="580">Outcome</tspan></text>
-          
+          <g class="second" onmouseover="show('two')">
+            <path class="cls-1"
+              d="m1027.7,249.9c-60,84.2-208.1,292.4-208.1,292.4,0,0,176.7,247.8,222.5,304.6,69.2,86,141.5-1.7,141.5-1.7l218.5-305.4s-52.3-71.7-208.1-289.2c0,0-76.2-129.7-166.4-.8Z" />
+            <text class="txt" x="530" y="295" font-family="Gibson" font-size="35" font-weight="700"
+              fill="#fff">Ideation</text>
+          </g>
+
+          <g class="third" onmouseover="show('three')">
+            <path class="cls-1"
+              d="m1957,497.6c-33.4-41.3-120.3-163.5-180.3-247.7-90.2-128.9-166.4.8-166.4.8-155.8,217.5-208.1,289.2-208.1,289.2l218.5,305.4s72.3,87.7,141.5,1.7c45.7-56.8,190-265.2,190-265.2,0,0,33.5-42.9,4.7-84.1Z" />
+            <text class="txt" x="840" y="295" font-family="Gibson" font-size="35" font-weight="700"
+              fill="#fff">Delivery</text>
+          </g>
+
+          <text font-family="Gibson" font-size="20" font-weight="400" fill="#fff">
+            <tspan x="385" , y="550">Innovation</tspan>
+            <tspan x="370" , y="580">Opportunities</tspan>
+          </text>
+          <text font-family="Gibson" font-size="20" font-weight="400" fill="#fff">
+            <tspan x="710" , y="550">Problem</tspan>
+            <tspan x="705" , y="580">Definition</tspan>
+          </text>
+          <text font-family="Gibson" font-size="20" font-weight="400" fill="#fff">
+            <tspan x="990" , y="550">Commercial</tspan>
+            <tspan x="1000" , y="580">Outcome</tspan>
+          </text>
+
           <circle class="first-circle" cx="434" cy="288" r="37"></circle>
           <circle class="second-circle" cx="743" cy="288" r="37"></circle>
           <circle class="third-circle" cx="1044" cy="288" r="37"></circle>
@@ -116,6 +128,9 @@
   </section>
   <!-- end section process -->
 
+ 
+
+
   <!-- section enquries -->
   <section class="enquries">
     <div class="inner">
@@ -123,21 +138,47 @@
         <div class="left-top">
           <h2>So what's next?<br>Let's Create something amazing!</h2>
           <ul>
-            <li>Australia</li>
-            <li>United Kingdom</li>
-            <li>Hong Kong</li>
+            <li onmouseover="show('one')">Australia</li>
+            <li onmouseover="show('two')">United Kingdom</li>
+            <li onmouseover="show('three')">Hong Kong</li>
           </ul>
-          <div class="address">
+          <div class="address first-one" style="display: block;">
             <h2>Designworks Australia</h2>
             <p>
               3/7 Anthony St <br> West End Brisbane <br> Australia 4101
             </p>
           </div>
+          <div class="address second-one" style="display: none;">
+            <h2>Designworks UK</h2>
+            <p>
+              Unit 2 Windsor Business Centre <br> Vansittart Estate <br> Windsor
+              <br> Berkshire SL4 1SP <br> United Kingdom
+            </p>
+          </div>
+          <div class="address third-one" style="display: none;">
+            <h2>Designworks Hong Kong</h2>
+            <p>
+              Room 1308-09 <br> 13/F Lu Plaza <br> No. 2 Wing Yip Street
+              <br> Kwun Tong <br>  Kowloon <br> Hong Kong
+            </p>
+          </div>
         </div>
         <div class="left-down">
-          <h2>Enquiries</h2>
-          <p>+61 7 3726 0026</p>
-          <p>info@designworksgroup.net</p>
+          <div class="first-one" style="display: block;">
+            <h2>Enquiries</h2>
+            <p>+61 7 3726 0026</p>
+            <p>info@designworksgroup.net</p>
+          </div>
+          <div class="second-one" style="display: none;">
+            <h2>Enquiries</h2>
+            <p>+44 1753 842 404</p>
+            <p>dw@designworkswindsor.co.uk</p>
+          </div>
+          <div class="third-one" style="display: none;">
+            <h2>Enquiries</h2>
+            <p>+852 3188 2287</p>
+            <p>info@designworkshk.com</p>
+          </div>
         </div>
       </article>
       <article>
@@ -171,6 +212,30 @@
     <p><a href="#">Back to Top</a></p>
   </footer>
   <!-- end footer -->
+
+
+   <!-- 임시 script -->
+   <script>
+    function show(kind) {
+      switch (kind) {
+        case "one":
+          document.querySelector(".first-one").style.display = "block";
+          document.querySelector(".second-one").style.display = "none";
+          document.querySelector(".third-one").style.display = "none";
+          break;
+        case "two":
+          document.querySelector(".first-one").style.display = "none";
+          document.querySelector(".second-one").style.display = "block";
+          document.querySelector(".third-one").style.display = "none";
+          break;
+        case "three":
+          document.querySelector(".first-one").style.display = "none";
+          document.querySelector(".second-one").style.display = "none";
+          document.querySelector(".third-one").style.display = "block";
+          break;
+      } //switch end
+    } //show() end
+  </script>
 </body>
 
 </html>
