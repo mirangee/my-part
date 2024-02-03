@@ -161,7 +161,6 @@ section.enquries {
   background-image: url(./img/city-dark.jpg);
 }
 
-/* left part */
 section.enquries .inner {
   width: 50%;
   height: inherit;
@@ -180,7 +179,12 @@ section.enquries .inner h2 {
   font-size: 24px;
 }
 
-section.enquries .inner article .left-top>h2::after {
+section.enquries .inner article p {
+  font-size: 18px;
+}
+
+/* left part */
+section.enquries .inner article .left>h2::after {
   content: '';
   border-bottom: 2px solid #f7941d;
   display: block;
@@ -188,30 +192,26 @@ section.enquries .inner article .left-top>h2::after {
   width: 2.7rem;
 }
 
-section.enquries .inner article .left-top>ul {
+section.enquries .inner article .left>ul {
   display: flex;
   justify-content: start;
   border-bottom: 1px solid #f7941d;
 }
 
-section.enquries .inner article .left-top>ul>li {
+section.enquries .inner article .left>ul>li {
   font-weight: bold;
   line-height: 2;
   flex-grow: 1;
   padding-left: 15px;
 }
 
-section.enquries .inner article .left-top>ul>li:hover {
+section.enquries .inner article .left>ul>li:hover {
   color: #fff;
   background-color: #f7941d;
 }
 
-section.enquries .inner article .left-top>ul>li:first-child {
+section.enquries .inner article .left>ul>li:first-child {
   background-color: #f7941d;
-}
-
-section.enquries .inner article p {
-  font-size: 18px;
 }
 
 section.enquries .inner article .address h2 {
@@ -219,22 +219,26 @@ section.enquries .inner article .address h2 {
 }
 
 section.enquries .inner article .address p {
-  margin-top: 17px;
+  margin-top: 15px;
 }
 
-section.enquries .inner article .left-down h2 {
-  margin-top: 100px;
+section.enquries .inner article .address p:last-child {
+  margin-top: 0px;
 }
 
-section.enquries .inner article .left-down p:nth-child(2) {
+section.enquries .inner article .address p:nth-child(4) {
   margin-top: 17px;
   color: #f7941d;
   font-size: 28px;
   font-weight: 900;
 }
 
-section.enquries .inner article .left-down p:nth-child(2):hover {
+section.enquries .inner article .left p:nth-child(4):hover {
   color: #be6c07;
+}
+
+section.enquries .inner article .left h2:nth-child(3) {
+  margin-top: 100px;
 }
 
 /* right part */

@@ -160,46 +160,38 @@
   <section class="enquries">
     <div class="inner">
       <article>
-        <div class="left-top">
+        <div class="left">
           <h2>So what's next?<br>Let's Create something amazing!</h2>
           <ul>
-            <li onclick="show('one')">Australia</li>
-            <li onclick="show('two')">United Kingdom</li>
-            <li onclick="show('three')">Hong Kong</li>
+            <li class="country" onclick="country('one')">Australia</li>
+            <li class="country" onclick="country('two')">United Kingdom</li>
+            <li class="country" onclick="country('three')">Hong Kong</li>
           </ul>
-          <div class="address first-one" style="display: block;">
+          <div class="address first-thing" style="display: block;">
             <h2>Designworks Australia</h2>
             <p>
               3/7 Anthony St <br> West End Brisbane <br> Australia 4101
             </p>
+            <h2>Enquiries</h2>
+            <p>+61 7 3726 0026</p>
+            <p>info@designworksgroup.net</p>
           </div>
-          <div class="address second-one" style="display: none;">
+          <div class="address second-thing" style="display: none;">
             <h2>Designworks UK</h2>
             <p>
               Unit 2 Windsor Business Centre <br> Vansittart Estate <br> Windsor
               <br> Berkshire SL4 1SP <br> United Kingdom
             </p>
+            <h2>Enquiries</h2>
+            <p>+44 1753 842 404</p>
+            <p>dw@designworkswindsor.co.uk</p>
           </div>
-          <div class="address third-one" style="display: none;">
+          <div class="address third-thing" style="display: none;">
             <h2>Designworks Hong Kong</h2>
             <p>
               Room 1308-09 <br> 13/F Lu Plaza <br> No. 2 Wing Yip Street
               <br> Kwun Tong <br> Kowloon <br> Hong Kong
             </p>
-          </div>
-        </div>
-        <div class="left-down">
-          <div class="first-one" style="display: block;">
-            <h2>Enquiries</h2>
-            <p>+61 7 3726 0026</p>
-            <p>info@designworksgroup.net</p>
-          </div>
-          <div class="second-one" style="display: none;">
-            <h2>Enquiries</h2>
-            <p>+44 1753 842 404</p>
-            <p>dw@designworkswindsor.co.uk</p>
-          </div>
-          <div class="third-one" style="display: none;">
             <h2>Enquiries</h2>
             <p>+852 3188 2287</p>
             <p>info@designworkshk.com</p>
@@ -260,6 +252,29 @@
           break;
       } //switch end
     } //show() end
+
+
+    //연습
+    function country(kind) {
+      switch (kind) {
+        case "one":
+          document.querySelector(".first-thing").style.display = "block";
+          document.querySelector(".second-thing").style.display = "none";
+          document.querySelector(".third-thing").style.display = "none";
+          break;
+        case "two":
+          document.querySelector(".first-thing").style.display = "none";
+          document.querySelector(".second-thing").style.display = "block";
+          document.querySelector(".third-thing").style.display = "none";
+          break;
+        case "three":
+          document.querySelector(".first-thing").style.display = "none";
+          document.querySelector(".second-thing").style.display = "none";
+          document.querySelector(".third-thing").style.display = "block";
+          break;
+      } //switch end
+    }
+
   </script>
 </body>
 
