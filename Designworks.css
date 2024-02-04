@@ -2,22 +2,23 @@
 
 /* section.process style */
 section.process {
-  height: 1050px;
-}
-
-section.process .contents {
+  /* height: 1050px; */
   background: url(./img/our-design-process-background.jpg) no-repeat center;
-  background-size: 108%;
-  background-position: 60% 0%;
-  position: relative;
+  background-size: 2100px;
+  background-position: 50% 0%;
 }
 
+section.process .contents .description {
+  width: 1000px;
+  margin: 0 auto;
+}
 section.process .contents .title {
-  padding-top: 60px;
+  padding-top: 65px;
   color: #fff;
   font-size: 48px;
   font-weight: 400;
   text-align: center;
+  margin-bottom: 48px;
 }
 
 /* 중앙 흰색 선 */
@@ -25,25 +26,27 @@ section.process .contents .title::after {
   content: '';
   border-bottom: 2px solid #fff;
   display: block;
-  margin: 1.56rem auto 2.1rem;
+  margin: 1.1rem auto 2.1rem;
   width: 2.7rem;
 }
 
 section.process .contents .description p {
   font-size: 24px;
-  font-weight: 700;
-  max-width: 500px;
-  margin: 0 auto;
+  font-weight: bold;
+  max-width: 579px;
+  margin-left: 270px;
+  text-align: left;
+  letter-spacing: 0.5px;
 }
 
 section.process .contents .description .list {
-  width: 25%;
+  width: 50%;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
   display: flex;
   justify-content: space-evenly;
-  margin: 30px auto 0;
+  margin: 30px 0 30px 270px;
 }
 
 section.process .contents .description .list ul {
@@ -52,7 +55,7 @@ section.process .contents .description .list ul {
 }
 
 section.process .contents .description .list li {
-  margin: 10px 0;
+  line-height: 1.8;
 }
 
 
@@ -68,6 +71,10 @@ section.process .contents {
   stroke-width: 24.3px;
   transform: scale(0.53);
   fill-opacity: 0;
+}
+
+.first > .cls-1 {
+  fill-opacity: 0.3;
 }
 
 .first:hover>.cls-1 {
@@ -98,13 +105,16 @@ section.process .contents {
   z-index: 9999;
 }
 
+section.process .contents .diagram {
+  height: 600px;
+}
 
 section.process .contents .diagram p {
   color: #fff;
   font-size: 32px;
 
   position: absolute;
-  top: 65%;
+  bottom: 0px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
