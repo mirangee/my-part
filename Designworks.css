@@ -73,11 +73,7 @@ section.process .contents {
   fill-opacity: 0;
 }
 
-.first > .cls-1 {
-  fill-opacity: 0.3;
-}
-
-.first:hover>.cls-1 {
+.first >.cls-1 {
   fill-opacity: 0.3;
 }
 
@@ -168,7 +164,10 @@ section.marketing .txt-contents p {
 
 section.enquries {
   height: 90vh;
-  background-image: url(./img/city-dark.jpg);
+  background-image: url(./img/footer-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
 }
 
 section.enquries .inner {
@@ -224,11 +223,18 @@ section.enquries .inner article .left>ul>li:first-child {
   background-color: #f7941d;
 }
 
+section.enquries .inner article .address {
+  height: 355px;
+}
+
 section.enquries .inner article .address h2 {
   margin-top: 20px;
 }
-
-section.enquries .inner article .address p {
+ 
+section.enquries .inner article .address p.address-content {
+  height: 180px;
+}
+section.enquries .inner article .address p.address-content {
   margin-top: 15px;
 }
 
@@ -245,10 +251,6 @@ section.enquries .inner article .address p:nth-child(4) {
 
 section.enquries .inner article .left p:nth-child(4):hover {
   color: #be6c07;
-}
-
-section.enquries .inner article .left h2:nth-child(3) {
-  margin-top: 100px;
 }
 
 /* right part */
